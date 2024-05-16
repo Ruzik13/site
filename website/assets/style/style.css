@@ -1,0 +1,58 @@
+body{
+    font-family: 'Akira Expanded', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+}
+
+.container{
+    margin: 0px 112px;
+}
+
+
+
+/*HEADER*/
+
+header{
+    margin: 31px 0px 430px 429px; 
+}
+
+.logo{
+    font-family: 'Akira Expanded', sans-serif;
+    color:deeppink;
+}
+
+.header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    font-family: 'Akira Expanded', sans-serif;
+    color: #fff;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+nav a:last-of-type{
+    margin-right: 0;
+}
+
+.button-header{
+    font-family: 'Akira Expanded', sans-serif;
+    color: deeppink;
+    text-decoration: none;
+}
+.header-logo{
+    color: #fff;
+}
+
+/*MAIN*/
+
+.main-inner{
+    background-image: url(../images/vBpeYmssgfI.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
