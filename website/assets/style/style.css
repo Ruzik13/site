@@ -76,6 +76,8 @@ h1{
     font-family: "Montserrat", sans-serif;
 }
 
+/*PHOTO*/
+
 * {
     margin: 0;
     padding: 0;
@@ -152,7 +154,7 @@ h1{
   .c-label {
     display: inline-block;
     color: #eee;
-    background-color: deeppink;
+    background-color: deeppink  ;
     line-height: 1;
     padding: 0.5em 0.9em;
     margin-right: 0.5em;
@@ -200,10 +202,10 @@ h1{
     transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   .js-slider_nav_item:hover {
-     transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-30%, 0, 0);
   }
   .js-slider_nav_item.next:hover {
-     transform: rotateY(180deg) translate3d(-30%, 0, 0);
+    transform: rotateY(180deg) translate3d(-30%, 0, 0);
   }
   .js-slider_nav_item:hover:before {
     transform: translate3d(0, -50%, 0) rotate(-30deg);
@@ -256,3 +258,9 @@ h1{
   #s-3:checked ~ .js-slider .js-slider_indicator .indi-3:after {
     transform: translate3d(-50%, -50%, 0) scale(2.5);
   }
+
+  /*ASIDE*/
+.links{
+  float:right;
+  background-color: deeppink;
+}
