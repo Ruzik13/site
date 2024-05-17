@@ -286,3 +286,12 @@ h1{
   #s-3:checked ~ .js-slider .js-slider_indicator .indi-3:after {
     transform: translate3d(-50%, -50%, 0) scale(2.5);
   }
+
+aside{
+  float: right;
+  border: 1px solid darkred;
+}
+
+.links{
+  border: darkred 2px;
+}
