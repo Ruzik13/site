@@ -1,15 +1,14 @@
-nav{
+nav {
     float: left;
+    order: 2;
 }
 
 nav ul {
-    display: flex;
     height: 60px;
-    min-width: 600px;
     margin: auto;
-    align-items: center;
-    justify-content: space-around;
+    align-items:flex-start;
     position: relative;
+    row-gap: 40px;
 }
 
 a {
