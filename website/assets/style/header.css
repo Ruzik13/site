@@ -1,8 +1,8 @@
 header {
     margin: 20px 0px 0px 0px;
     text-align: center;
-    height: 30px;
-    order: 0;
+    align-items: center;
+    height: 40px
 }
 
 .logo {

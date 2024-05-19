@@ -1,5 +1,4 @@
 aside {
     float: right;
-    flex: 1 1 100px;
-    order: 4;
+    border: 1px solid darkred;
 }
