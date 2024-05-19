@@ -3,7 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <link rel = "stylesheet" href = "assets/style/style.css">
+        <link rel = "stylesheet" href = "assets/style/header.css">
+        <link rel = "stylesheet" href = "assets/style/nav.css">
+        <link rel = "stylesheet" href = "assets/style/main.css">
+        <link rel = "stylesheet" href = "assets/style/aside.css">
+        <link rel = "stylesheet" href = "assets/style/footer.css">
         <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/akira-expanded">
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -18,74 +24,80 @@
     </head>
 
     <body>
+
         <header>
-            <p class ="logo"> DIR EN GREY</p>
+            <p class="logo"> DIR EN GREY</p>
         </header>
-        <nav >
-            <ul class="list-menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">TRACK LIST</a></li>
-                <li><a href="#">TICKETS</a></li>
-            </ul>
-        </nav>
+
         <main>
-            <section class = "container">
-                <div class="main-inner">
-                    <p class = "main-inner-first">26.05.2024</p>
+            <!--LEFT-->
+            <nav>
+                <ul class="list-menu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">TRACK LIST</a></li>
+                    <li><a href="#">TICKETS</a></li>
+                </ul>
+            </nav>
+
+            <!--SECTIONS-->
+            <section>
+                <article class="main-inner">
+                    <p class="main-inner-first">26.05.2024</p>
                     <h3>"THE DEVIL IN ME"</h3>
-                </div>
-            </section>
-            <section class="container"> 
-                <header>ABOUT US</header>
-                <article class="bio">
+                </article>
+
+                <article class="about">
+                    <header class="tite">ABOUT US</header>
+
                     <p class="pic">
                         <img src="assets/images/about/kyo1.jpg" alt="kyo">
                     </p>
+
                     <div>
                         <h3>KYO</h3>
                         <p class="text">
                             Name: Niimura Tooru<br>Role: Vocal  <br>Birthday: 16.02<br>Blood type: B<br>Hometown: Kyoto
                         </p>
                     </div>
-                </article>
-                <article class="bio">
-                    <p class="pic">
-                        <img src="assets/images/about/kaoru1.jpg" alt="kaoru">
-                    </p>
+
                     <div>
                         <h3>KAORU</h3>
                         <p class="text">
                             Name: Niikura Kaoru<br>Role: Lead Guitar<br>Birthday: 17.02<br>Blood type: A<br>Hometown: Hyougo
                         </p>
                     </div>
-                </article>
-                <article class="bio">
+
+                    <p class="pic">
+                        <img src="assets/images/about/kaoru1.jpg" alt="kaoru">
+                    </p>
+
                     <p class="pic">
                         <img src="assets/images/about/die1.jpg" alt="die">
                     </p>
+
                     <div>
                         <h3>DIE</h3>
                         <p class="text">
                             Name: Ando Daisuke<br>Role: Rhytm Guitar<br>Birthday: 20.12<br>Blood type: B<br>Hometown: Mie
                         </p>
                     </div>
-                </article>
-                <article class="bio">
-                    <p class="pic">
-                        <img src="assets/images/about/toshiya.jpg" alt="toshiya">
-                    </p>
+
                     <div>
                         <h3>TOSHIYA</h3>
                         <p class="text">
                             Name: Hara Toshimasa<br>Role: Bass<br>Birthday: 31.03<br>Blood type: B<br>Hometown: Nagano
                         </p>
                     </div>
-                </article>
-                <article class="bio">
+
                     <p class="pic">
-                        <img src="assets/images/about/shinya.jpg" alt="shinya"  >
+                        <img src="assets/images/about/toshiya.jpg" alt="toshiya">
                     </p>
+
+                    <p class="pic">
+                        <img src="assets/images/about/shinya.jpg" alt="shinya">
+                    </p>
+
                     <div>
                         <h3>SHINYA</h3>
                         <p class="text">
@@ -93,10 +105,10 @@
                         </p>
                     </div>
                 </article>
-            </section>  
-            <section class="container">
-                <header class="c-label"><H3>Apocalyptica And Dir En Grey In Concert</H3></header>
-                <article class ="">
+
+                <article class="gallery">
+                    <header class="c-label"><h3>Apocalyptica And Dir En Grey In Concert</h3></header>
+
                     <input type="radio" id="s-1" name="slider-control" checked="checked">
                     <input type="radio" id="s-2" name="slider-control">
                     <input type="radio" id="s-3" name="slider-control">
@@ -114,7 +126,8 @@
                         </figure>
                         <figure class="js-slider_item img-2">
                             <div class="js-slider_img">
-                            <img class="c-img-h-full" src="assets/images/gal/gal4.jpg" alt=""></div>
+                                <img class="c-img-h-full" src="assets/images/gal/gal4.jpg" alt="">
+                            </div>
                             <figcaption class="wo-caption">
                                 <h3 class="wo-h3">TOUR18 真世界</h3>
                                 <div class="wo-credit">
@@ -124,7 +137,8 @@
                         </figure>
                         <figure class="js-slider_item img-3">
                             <div class="js-slider_img">
-                            <img class="c-img-h-full" src="assets/images/gal/gal5.jpg" alt=""></div>
+                                <img class="c-img-h-full" src="assets/images/gal/gal5.jpg" alt="">
+                            </div>
                             <figcaption class="wo-caption">
                                 <h3 class="wo-h3">TOUR 00 The type of Deity ends</h3>
                                 <div class="wo-credit">
@@ -132,79 +146,84 @@
                                 </div>
                             </figcaption>
                         </figure>
-                    <div class="js-slider_nav">
-                        <label class="js-slider_nav_item s-nav-1 prev" for="s-3"></label>
-                        <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
-                        <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
-                        <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
-                        <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
-                        <label class="js-slider_nav_item s-nav-3 next" for="s-1"></label>
-                    </div>
-                    <div class="js-slider_indicator">
-                        <div class="js-slider-indi indi-1"></div>
-                        <div class="js-slider-indi indi-2"></div>
-                        <div class="js-slider-indi indi-3"></div>
-                    </div>
+                        <div class="js-slider_nav">
+                            <label class="js-slider_nav_item s-nav-1 prev" for="s-3"></label>
+                            <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
+                            <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
+                            <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
+                            <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
+                            <label class="js-slider_nav_item s-nav-3 next" for="s-1"></label>
+                        </div>
+                        <div class="js-slider_indicator">
+                            <div class="js-slider-indi indi-1"></div>
+                            <div class="js-slider-indi indi-2"></div>
+                            <div class="js-slider-indi indi-3"></div>
+                        </div>
                     </div>
                 </article>
+
+                <article class="map">
+                    <header class="tite">Location</header>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d207534.64898269376!2d139.5404259!3d35.6344095!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cabc5d7bd7f%3A0xa251b82666d31783!2sOrchard%20Hall!5e0!3m2!1sen!2sru!4v1716025290811!5m2!1sen!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+
+                <article class="contacts">
+                    <header class="tite">Contact Us</header>
+                    <form method="POST" action="">
+                        <input type="text" id="name" name="name" placeholder="Name:" required><br>
+                        <input type="email" id="email" name="email" placeholder="email:" required><br>
+                        <textarea id="message" name="message" placeholder="Message:" required></textarea><br>
+                        <input type="submit" value="Send">
+                    </form>
+                </article>
             </section>
-            <section class="map">
-                <header>Location</header>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d207534.64898269376!2d139.5404259!3d35.6344095!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cabc5d7bd7f%3A0xa251b82666d31783!2sOrchard%20Hall!5e0!3m2!1sen!2sru!4v1716025290811!5m2!1sen!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-            <section class="contacts">
-                <header>Contact Us</header>
-                <form method="POST" action="">
-                    <input type="text" id="name" name="name" placeholder="Name:" required><br>
-                    <input type="email" id="email" name="email" placeholder="email:" required><br>
-                    <textarea id="message" name="message" placeholder="Message:" required></textarea><br>
-                    <input type="submit" value="Send">
-                </form>
-            </section>
+
+            <!--RIGHT-->
+            <aside>
+                <div class="any-en">Links</div>
+                <div class="any-jp">リンク</div>
+                <div>
+                    <ul class="links">
+                        <li class="link">
+                            <a class="" href="http://direngrey.co.jp/" target="_blank">direngrey.co.jp</a>
+                        </li>
+                        <li class="link">
+                            <a class="symbol__youtube" href="https://youtube.com/channel/UCYY158T1shyne7i3C9GV-UA/" target="_blank">YouTube</a>
+                        </li>
+                        <li class="link">
+                            <a class="symbol__twitter" href="https://twitter.com/DIRENGREY_JP" target="_blank">DIRENGREY_JP</a>
+                        </li>
+                        <li class="link">
+                            <a class="symbol__twitter" href="https://twitter.com/kyo_official" target="_blank">kyo_official</a>
+                            <div>V. <span class="any--en ">Kyo</span><span class="any--ja any--hidden">京</span></div>
+                        </li>
+                        <li class="link">
+                            <a class="symbol__twitter" href="https://twitter.com/kaorugeee" target="_blank">kaorugeee</a>
+                            <div>G. <span class="any--en ">Kaoru</span><span class="any--ja any--hidden">薫</span></div>
+                        </li>
+                        <li class="link">
+                            <a class="symbol__twitter" href="https://twitter.com/224_Shinya" target="_blank">224_Shinya</a>
+                            <div>D. Shinya</div>
+                        </li>
+                        <li class="link">
+                            <a class="symbol__twitter" href="https://twitter.com/dirt_jp" target="_blank">dirt_jp</a>
+                            <div>B. Toshiya</div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
         </main>
-        <aside>
-            <div class="any-en">Links</div>
-            <div class="any-jp">リンク</div>
-            <div>
-                <ul class="links">
-                    <li class="link">
-                        <a class="" href="http://direngrey.co.jp/" target="_blank">direngrey.co.jp</a>
-                    </li>
-                    <li class="link">
-                        <a class="symbol__youtube" href="https://youtube.com/channel/UCYY158T1shyne7i3C9GV-UA/" target="_blank">YouTube</a>
-                    </li>
-                    <li class="link">
-                        <a class="symbol__twitter" href="https://twitter.com/DIRENGREY_JP" target="_blank">DIRENGREY_JP</a>
-                    </li>
-                    <li class="link">
-                        <a class="symbol__twitter" href="https://twitter.com/kyo_official" target="_blank">kyo_official</a>
-                        <div>V. <span class="any--en ">Kyo</span><span class="any--ja any--hidden">京</span></div>
-                    </li>
-                    <li class="link">
-                        <a class="symbol__twitter" href="https://twitter.com/kaorugeee" target="_blank">kaorugeee</a>
-                        <div>G. <span class="any--en ">Kaoru</span><span class="any--ja any--hidden">薫</span></div>
-                    </li>
-                    <li class="link">
-                        <a class="symbol__twitter" href="https://twitter.com/224_Shinya" target="_blank">224_Shinya</a>
-                        <div>D. Shinya</div>
-                    </li>
-                    <li class="link">
-                        <a class="symbol__twitter" href="https://twitter.com/dirt_jp" target="_blank">dirt_jp</a>
-                        <div>B. Toshiya</div>
-                    </li>
-                </ul>
-            </div>
-        </aside>
+
         <footer>
             <div class="copyRight">
                 <div class="innerBlock">
-                <p class="cpTxt">Copyright ©sun-krad Co., Ltd. All Rights Reserved<span class="cpTxtB">※無断転載を禁じます。</span></p>
-                <ul class="footer-list">
-                    <li><a href="#" class="iframe">CONTACT</a><span>|</span></li>
-                    <li><a href="#" class="iframe">SITE POLICY</a><span>|</span></li>
-                    <li><a href="#" class="iframe">PRIVACY POLICY</a><span>|</span></li>
-                    <li><a href="http://www.sunkrad.jp/about.html#rec" target="_blank">RECRUIT</a></li>
-                </ul>
+                    <p class="cpTxt">Copyright ©sun-krad Co., Ltd. All Rights Reserved<span class="cpTxtB">※無断転載を禁じます。</span></p>
+                    <ul class="footer-list">
+                        <li><a href="#" class="iframe">CONTACT</a><span>|</span></li>
+                        <li><a href="#" class="iframe">SITE POLICY</a><span>|</span></li>
+                        <li><a href="#" class="iframe">PRIVACY POLICY</a><span>|</span></li>
+                        <li><a href="http://www.sunkrad.jp/about.html#rec" target="_blank">RECRUIT</a></li>
+                    </ul>
                 </div>
             </div>
         </footer>
