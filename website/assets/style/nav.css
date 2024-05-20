@@ -45,11 +45,12 @@ nav ul li {
 }
 
 .list-menu ul{
+    padding: 10px 10px 0px 10px;
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: darkred;  
     top:24%;
-    right: 76%;
+    right: 71%;
     border-style:dashed;
     border-color: darkred;
     border-width: 2px;
@@ -58,10 +59,15 @@ nav ul li {
 
 .list-menu li:hover > ul {
     display: block;
+    color: black;
 }
 
 .list-menu a:hover::after {
     width: 100%;
+}
+
+.list-menu li ul li a:hover{
+    color: black;
 }
 
 .button-header {
