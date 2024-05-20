@@ -1,14 +1,14 @@
 nav {
-    width: auto; /* ширина */
+    width: auto; /* пїЅпїЅпїЅпїЅпїЅпїЅ */
     height: 150px;
-    margin-left: 20px; /* отступ слева */
+    margin-left: 20px; /* пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ */
     flex-grow: 1;
 }
 
 nav ul {
     margin: auto;
     position: relative;
-  
+
     justify-content: center;
 }
 
@@ -17,13 +17,16 @@ nav ul li {
 }
 
 .list-menu a {
+    display: block;
     text-decoration: none;
+    text-align: left;
     font-family: 'Akira Expanded', sans-serif;
     color: #fff;
     font-size: 18px;
     color: white;
     position: relative;
     max-width: 15%;
+    transition: all .5s;
 }
 
 .list-menu a::after {
@@ -37,8 +40,34 @@ nav ul li {
     transition: width 0.5s ease-in-out;
 }
 
+.list-menu a:hover {
+
+}
+
+.list-menu ul{
+    padding: 10px 10px 0px 10px;
+    display: none;
+    position: fixed;
+    background-color: darkred;  
+    top:24%;
+    right: 71%;
+    border-style:dashed;
+    border-color: darkred;
+    border-width: 2px;
+
+}
+
+.list-menu li:hover > ul {
+    display: block;
+    color: black;
+}
+
 .list-menu a:hover::after {
     width: 100%;
+}
+
+.list-menu li ul li a:hover{
+    color: black;
 }
 
 .button-header {
@@ -46,3 +75,12 @@ nav ul li {
     color: darkred;
     text-decoration: none;
 }
+
+.list-menu li{
+    list-style: none;
+    background: none;
+    position: relative;
+}
+
+
+
