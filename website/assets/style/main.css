@@ -58,6 +58,7 @@ article{
 }
 
 .pic img {
+    text-align: right;
     width: 300px;
     height: auto;
 }
@@ -227,7 +228,7 @@ transform: translate3d(-50%, -50%, 0) scale(2.5);
 }
 
 .links{
-  border: darkred 2px;
+    border: darkred 2px;
 }
 
 @media (max-width: 768px) {
