@@ -1,10 +1,14 @@
 nav {
-    float: left;
+    width: auto; /* ширина */
+    height: 150px;
+    margin-left: 20px; /* отступ слева */
+    flex-grow: 1;
 }
 
 nav ul {
     margin: auto;
     position: relative;
+  
     justify-content: center;
 }
 
@@ -12,16 +16,17 @@ nav ul li {
     padding-bottom: 24px;
 }
 
-a {
+.list-menu a {
     text-decoration: none;
     font-family: 'Akira Expanded', sans-serif;
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
     color: white;
     position: relative;
+    max-width: 15%;
 }
 
-a::after {
+.list-menu a::after {
     content: "";
     position: absolute;
     background-color: darkred;
@@ -32,7 +37,7 @@ a::after {
     transition: width 0.5s ease-in-out;
 }
 
-a:hover::after {
+.list-menu a:hover::after {
     width: 100%;
 }
 
