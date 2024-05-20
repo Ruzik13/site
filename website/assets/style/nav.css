@@ -1,0 +1,43 @@
+nav {
+    float: left;
+}
+
+nav ul {
+    margin: auto;
+    position: relative;
+    justify-content: center;
+}
+
+nav ul li {
+    padding-bottom: 24px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Akira Expanded', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    color: white;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    background-color: darkred;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s ease-in-out;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.button-header {
+    font-family: 'Akira Expanded', sans-serif;
+    color: darkred;
+    text-decoration: none;
+}
