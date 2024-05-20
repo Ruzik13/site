@@ -28,6 +28,7 @@ section {
     max-width: 60%;
     align-content: center;
 }
+
 article{
 
 }
@@ -48,20 +49,29 @@ article{
     color: white;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
+/*ABOUT*/
 .about {
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     column-gap: 42px;
 }
 
+.about-item{
+    width: 30%;
+    color: white;
+    margin: 42px;
+}
+
 .pic img {
-    text-align: right;
-    width: 300px;
+    width: 250px;
     height: auto;
 }
+
 
 li {
 list-style: none;
@@ -69,12 +79,16 @@ list-style: none;
 input[type="radio"] {
 display: none;
 }
+
+
+/*GALLERY*/
 .js-slider {
 position: relative;
 width: 80%;
 height: 100vh;
 margin: 0 auto;
 }
+
 .js-slider_item {
 position: absolute;
 left: 0;
@@ -97,17 +111,20 @@ transform-origin: left center;
 transform: translate3d(0, 0, 0) rotateY(0deg) scaleX(1);
 }
 .js-slider_img {
+align-items: center;
 width: 100%;
 height: 60%;
 position: relative;
 overflow: hidden;
 }
 .c-img-h-full {
+align-items: center;
+justify-content: center;
 position: absolute;
 top: 50%;
-left: 50%;
+left: 45%;
 width: auto;
-height: 100%;
+height: 300px;
 transform: translate3d(-50%, -50%, 0);
 }
 figcaption {
@@ -117,10 +134,11 @@ display: block;
 margin-top: 6rem;
 margin-bottom: 2rem;
 padding-bottom: 2rem;
-border-bottom: 1px solid darkred;
+border-bottom: 3px solid darkred;
 }
 .c-label {
-display: inline-block;
+display: flex;
+justify-content: center;
 color: #eee;
 background-color: darkred;
 line-height: 1;
@@ -129,9 +147,18 @@ margin-right: 0.5em;
 font-size: 1.4rem;
 font-weight: bold;
 }
+
+.wo-credit{
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
 .view-sm {
 display: none;
 }
+
+.js-slider{
+}
+
 .js-slider_nav {
 position: absolute;
 left: 0;
@@ -139,6 +166,7 @@ top: 50%;
 width: 100%;
 transform: translate3d(0, -50%, 0);
 }
+
 .js-slider_nav_item.prev {
 left: 0;
 }
@@ -227,8 +255,144 @@ transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 transform: translate3d(-50%, -50%, 0) scale(2.5);
 }
 
+/*TRACK LIST*/
+.track-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    background-color: darkred;
+}
+
+.track-tite{
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 36px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    text-decoration: none;
+}
+
+.playlist{
+  list-style: none;
+  margin-left: 1em;
+  counter-reset: line;
+}
+
+.playlist > li {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+.playlist > li:before {
+  position: absolute;
+  left: -2.25em;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 0.5em;
+  background-color: black;
+  border-radius: 50%;
+  color: #fff;
+  text-align:center;
+  line-height: 1.25em;
+  counter-increment: line;
+  content: counter(line);
+
+}
+
+.music{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .links{
     border: darkred 2px;
+}
+
+/*LOCATION*/
+.map{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+margin-bottom: 100px;
+}
+
+/*CONTACT US*/
+.contacts{
+height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+width: 200px:
+padding: 80px 60px 100x;
+background: darkred;
+}
+
+.data-block{
+display: flex;
+justify-content: scale-between;
+flex-wrap: wrap;
+row-gap: 40px;
+margin-top: 55px;
+}
+
+input{
+background: transparent;
+height: 40px;
+border: none;
+border-bottom: 1px solid white;
+padding-left: 20px;
+
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-weight: bold;
+color: white;
+}
+
+input::placeholder{
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-weight: bold;
+color: white;
+}
+
+input:focus::placeholder{
+color: gray;
+}
+
+input:focus{
+outline: none;
+}
+
+#name{
+width: 100%;
+}
+
+#email{
+width: 50%;
+}
+
+#phone{
+width: 50%;
+}
+
+.text-area{
+margin-top: 65px;
+border: 1px, solid black;
+padding: 20px, 25px;
+display: flex;
+flex-direction: column;
 }
 
 @media (max-width: 768px) {
