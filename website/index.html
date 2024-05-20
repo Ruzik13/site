@@ -42,7 +42,7 @@
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">ABOUT US</a></li>
                         <li><a href="#">TRACK LIST</a></li>
-                        <li><a href="#">TICKETS</a></li>
+                        <li><a href="#">LOCATION</a></li>
                     </ul>
                 </nav>
 
@@ -164,6 +164,24 @@
                         </div>
                     </article>
 
+                    <article class="track-list">
+                        <header class="tite">Tracklist</header>
+                        <div class="playlist">
+                            <ul>
+                                <li><p class="music">1. The Devil In Me</p></li>
+                                <li><p class="music">2. Cage</p></li>
+                                <li><p class="music">3. Yokan</p></li>
+                                <li><p class="music">4. Kaishun</p></li>
+                                <li><p class="music">5. VINUSHKA</p></li>
+                                <li><p class="music">6. Ranunculus</p></li>
+                                <li><p class="music">7. Namamekashiki Ansoku, Tamerai ni Hohoemi</p></li>
+                                <li><p class="music">8. LOTUS</p></li>
+                                <li><p class="music">9. Yurameki</p></li>
+                                <li><p class="music">10. Erodo</p></li>
+                            </ul>
+                        </div>
+                    </article>
+
                     <article class="map">
                         <header class="tite">Location</header>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d207534.64898269376!2d139.5404259!3d35.6344095!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cabc5d7bd7f%3A0xa251b82666d31783!2sOrchard%20Hall!5e0!3m2!1sen!2sru!4v1716025290811!5m2!1sen!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -171,12 +189,13 @@
 
                     <article class="contacts">
                         <header class="tite">Contact Us</header>
-                        <form method="POST" action="">
+                        <form id="feedBackForm">
                             <input type="text" id="name" name="name" placeholder="Name:" required><br>
                             <input type="email" id="email" name="email" placeholder="email:" required><br>
                             <textarea id="message" name="message" placeholder="Message:" required></textarea><br>
                             <input type="submit" value="Send">
                         </form>
+                        <div id="response"></div>
                     </article>
                 </section>
 
@@ -220,16 +239,16 @@
         <footer>
             <div class="copyRight">
                 <div class="innerBlock">
-                    <p class="cpTxt">Copyright ©sun-krad Co., Ltd. All Rights Reserved<span class="cpTxtB">※無断転載を禁じます。</span></p>
-                    <ul class="footer-list">
-                        <li><a href="#" class="iframe">CONTACT</a><span>|</span></li>
-                        <li><a href="#" class="iframe">SITE POLICY</a><span>|</span></li>
-                        <li><a href="#" class="iframe">PRIVACY POLICY</a><span>|</span></li>
-                        <li><a href="http://www.sunkrad.jp/about.html#rec" target="_blank">RECRUIT</a></li>
-                    </ul>
+                    <p class="cpTxt">Copyright <span id="year"></span> ©sun-krad Co., Ltd. All Rights Reserved<span class="cpTxtB">※無断転載を禁じます。</span></p>
+                    <div class="footer-links">
+                        <a href="#" class="iframe">CONTACT</a><span>|</span>
+                        <a href="#" class="iframe">SITE POLICY</a><span>|</span>
+                        <a href="#" class="iframe">PRIVACY POLICY</a><span>|</span>
+                        <a href="http://www.sunkrad.jp/about.html#rec" target="_blank">RECRUIT</a>
+                    </div>
                 </div>
             </div>
         </footer>
-
+        <script>document.getElementById("year").innerHTML = new Date().getFullYear();   </script>
     </body>
 </html>
