@@ -21,10 +21,25 @@ h3 {
 }
 
 section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 2;
+    max-width: 60%;
+    align-content: center;
+}
+article{
+
 }
 
-p {
+.text {
     font-family: 'Montserrat';
+    font-size: 14px;
+    word-wrap: break-word; /* Ensures long wor
+        
+    word-wrap: break-word; /* Ensures long words wrap to the next line */
+    ds wrap to the next line */ margin: 0 auto; /* Centers the text block horizontally */
+    margin-bottom: 70px;
 }
 
 .tite {
@@ -213,4 +228,22 @@ transform: translate3d(-50%, -50%, 0) scale(2.5);
 
 .links{
   border: darkred 2px;
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 12px; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .text {
+        font-size: 14px; /* Default font size */
+    }
+}
+
+@media (min-width: 1201px) {
+    .text {
+        font-size: 16px; /* Larger font size for larger screens */
+    }
 }

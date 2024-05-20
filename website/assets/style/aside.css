@@ -1,4 +1,39 @@
 aside {
-    float: right;
+    width: auto; /* ширина */
+    height: fit-content;
+    margin-right: 20px;
     border: 1px solid darkred;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-grow: 1;
+    max-width: 15%;
+}
+
+.link{
+    padding-top: 18px;
+}
+
+.link a {
+    text-decoration: none;
+    font-family: 'Akira Expanded', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    color: white;
+}
+
+.side-tite {
+    text-decoration: none;
+    font-family: 'Akira Expanded', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    color: white;
+}
+
+
+.link a:hover{
+    color: darkred;
 }
