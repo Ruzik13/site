@@ -12,6 +12,7 @@ nav ul {
 }
 nav ul li {
     padding-bottom: 24px;
+    white-space: nowrap;
 }
 
 .list-menu a {
