@@ -1,0 +1,23 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px; 
+}
+
+.iframe {
+    text-decoration: none;
+    font-family: 'Akira Expanded', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    color: white;
+}
+
+.iframe:hover{
+    color: darkred;
+}
+
+.footer-list li{
+    display: inline;
+}

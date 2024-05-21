@@ -1,0 +1,16 @@
+header {
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+    align-items: center;
+    height: 40px;
+}
+
+.logo {
+    font-family: 'Akira Expanded';
+    color: darkred;
+}
+
+.header-inner {
+    align-items: center;
+    justify-content: space-between;
+}

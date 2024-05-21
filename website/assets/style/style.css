@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    /*box-sizing: border-box;*/
+}
+
+body {
+    color: #fff;
+    background: #000;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wrapper > *{
+}
+
