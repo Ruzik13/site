@@ -8,10 +8,8 @@ nav {
 nav ul {
     margin: auto;
     position: relative;
-
     justify-content: center;
 }
-
 nav ul li {
     padding-bottom: 24px;
 }
@@ -30,13 +28,6 @@ nav ul li {
 }
 
 .list-menu a::after {
-    content: "";
-    position: absolute;
-    background-color: darkred;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
     transition: width 0.5s ease-in-out;
 }
 
@@ -48,13 +39,12 @@ nav ul li {
     padding: 10px 10px 0px 10px;
     display: none;
     position: fixed;
-    background-color: darkred;  
+    background-color: darkred;
     top:24%;
     right: 71%;
     border-style:dashed;
     border-color: darkred;
     border-width: 2px;
-
 }
 
 .list-menu li:hover > ul {
@@ -81,6 +71,5 @@ nav ul li {
     background: none;
     position: relative;
 }
-
 
 
